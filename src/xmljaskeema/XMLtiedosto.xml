@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+XML ja DTD esimerkki
+-->
+
+<vuodenajat xmlns= "" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Vuodenajat.xsd">
+    <vuodenaika>
+        <nimi vuodenaika = "Kevät">Kevät
+        </nimi>
+        <kesto>3 kk
+        </kesto>
+    </vuodenaika>
+    <vuodenaika>
+        <nimi vuodenaika = "Kesä">Kesä
+        </nimi>
+        <kesto>3 kk
+        </kesto>
+    </vuodenaika>
+    <vuodenaika>
+        <nimi vuodenaika = "Syksy">Syksy
+        </nimi>
+        <kesto>3 kk
+        </kesto>
+    </vuodenaika>
+    <vuodenaika>
+        <nimi vuodenaika = "Talvi">Talvi
+        </nimi>
+        <kesto>3 kk
+        </kesto>
+    </vuodenaika>
+</vuodenajat>
+
