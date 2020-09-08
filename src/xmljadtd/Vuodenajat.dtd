@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+DTD esimerkki tiedosto
+-->
+<!ELEMENT nimi (#PCDATA)>
+<!ATTLIST nimi tyyppi CDATA #REQUIRED >
+<!ELEMENT vuodenajat (vuodenaika+) >
+<!ELEMENT kesto ( #PCDATA) >
+<!ELEMENT vuodenaika (nimi, kesto) >
+
