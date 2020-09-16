@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Skeema esimerkki
+-->
+<xsd:schema xmlns:xsd = "http://www.w3.org/2001/XMLSchema" elementFormDefault = "qualified">
+
+    
+      <!-- elementti "nimi" sisÃ¤ltÃ¤Ã¤ tekstiÃ¤ ja attribuutin "tyyppi" -->
+      
+  <xsd:element name ="nimi">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+          <xsd:attribute name ="vuodenaika" type ="xsd:string" use ="optional"/>
+        </xsd:extension>
+      </xsd:simpleContent>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name ="kesto" type = "xsd:string"/>
+
+  <xsd:complexType name = "vuodenaika">
+    <xsd:sequence>
+      <xsd:element ref ="nimi"/>
+      <xsd:element ref ="kesto"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name = "vuodenajat">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name = "vuodenaika" type = "vuodenaika" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+</xsd:schema>

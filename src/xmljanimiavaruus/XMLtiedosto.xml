@@ -2,30 +2,32 @@
 <!--
 XML ja DTD esimerkki
 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" 
-           xml:lang="EN" targetNamespace="http://www.w3.org/2001/XMLSchema" version="1.0">
-    <xs:annotation>
-     <xs:documentation> 
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.nimiavaruus.fi" 
+    xmlns= "http://www.nimiavaruus.fi" elementFormDefault="qualified">
+    <xsd:include schemaLocation="Vuodenajat.xsd"/>
+    <xsd:annotation>
+     <xsd:documentation> 
         Kevät:
 
-     </xs:documentation>
-    </xs:annotation>
-    <xs:annotation>
-     <xs:documentation> 
+     </xsd:documentation>
+    </xsd:annotation>
+    <xsd:annotation>
+     <xsd:documentation> 
         Kesä:
 
-     </xs:documentation>
-    </xs:annotation>
-    <xs:annotation>
-     <xs:documentation> 
+     </xsd:documentation>
+    </xsd:annotation>
+    <xsd:annotation>
+     <xsd:documentation> 
         Syksy:
 
-     </xs:documentation>
-    </xs:annotation>
-    <xs:annotation>
-     <xs:documentation> 
+     </xsd:documentation>
+    </xsd:annotation>
+    <xsd:annotation>
+     <xsd:documentation> 
         Talvi:
 
-     </xs:documentation>
-    </xs:annotation>
-</xs:schema>
+     </xsd:documentation>
+    </xsd:annotation>
+</xsd:schema>
